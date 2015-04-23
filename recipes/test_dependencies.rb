@@ -41,10 +41,10 @@ include_recipe "phantomjs::source"
 # automatically at the system level after install (this tends to break DNS
 # things on the machine). Our tests just need it present to spin up for testing
 # purposes on a separate port.
-package "unbound"
-service "unbound" do
-  action [:stop]
-end
+# package "unbound"
+# service "unbound" do
+#   action [:stop]
+# end
 
 # Install lsof for one of our tests that uses it to look for file descriptor
 # leaks.
