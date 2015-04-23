@@ -77,7 +77,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     }
 
     chef.run_list = [
-      "recipe[api-umbrella::default]"
+      "recipe[api-umbrella::development]"
     ]
   end
 end
