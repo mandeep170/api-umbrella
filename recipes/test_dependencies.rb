@@ -49,3 +49,6 @@ include_recipe "phantomjs::source"
 # Install lsof for one of our tests that uses it to look for file descriptor
 # leaks.
 package "lsof"
+package "ruby-devel"
+package "zlib-devel"
+package "openssl-devel"
